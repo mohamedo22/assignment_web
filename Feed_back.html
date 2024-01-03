@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feed back</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <div id="Contanir">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th> 1)are you sati</th>
+                    <th class="p_of_qustion">2) Do you find our website user-friendly?</th>
+                    <th class="p_of_qustion">3) Would you recommend us to others?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td style="padding-left: 5vw;">
+                        <input type="radio" name="q1" value="yes" > yes
+                        <input type="radio" name="q1" value="no" > no
+                    </td>
+                    <td style="padding-left: 5vw;">
+                        <input type="radio" name="q2" value="yes" > yes
+                        <input type="radio" name="q2" value="no" > no
+                    </td>
+                    <td style="padding-left: 5vw;">
+                        <input type="radio" name="q3" value="yes" > yes
+                        <input type="radio" name="q3" value="no" > no
+                        <button class="btn-next"  onclick="submit()">Submit</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button class="btn-next" onclick="slide()">Next</button>
+    </div>
+    <script src="feed_back.js"></script>
+</body>
+</html>

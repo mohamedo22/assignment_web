@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment log</title>
+    <link rel="stylesheet" href="mohamedosama.css">
+</head>
+<body>
+    <div id="continer">
+        <div id="signup-form">
+            <h1 style="margin-top: -2vw; margin-bottom: 3vw;">Sign up</h1>
+            <input type="text" id="username_textinput_of_signup">
+            <p id="pusername" >User name</p>
+            <input type="password" id="password_signup">
+            <p>Password</p>
+            <input type="text" id="age">
+            <p>Age</p>
+         <div style="display: flex;">  <div style="display: flex; width: fit-content;"><input type="radio" class="gender" value="male" name="gender"> <div style="margin-top: -.3vw; font-size: 1vw;"> Male </div></div> 
+           <div style="display: flex; width: fit-content;"><input type="radio" class="gender" value="female" name="gender" > <div style="margin-top: -.3vw; font-size: 1vw;"> female </div></div> </div> 
+           <input type="text" id="phone_number" style="margin-top: 1vw;">
+           <p>Phone number</p>
+            <button class="submit" style="margin-left: 0vw; scale: .8; margin-top: -5vw;" onclick="adduser()">Submit</button>
+        </div>
+        <div id="navigate_con">
+            <button class="navigate-btn" id="signup" onclick="move_to_sign_up()">Sign up</button>
+            <button class="navigate-btn" id="signin-btn" onclick="move_to_sign_in()">Sign in</button>
+        </div>
+        <div id="signin">
+            <h1 style="margin-top: -2vw; margin-bottom: 3vw;">Sign in</h1>
+            <input type="text" id="username_textinput">
+            <p id="p_username" >User name</p>
+            <input type="password" id="password_login">
+            <p>Password</p>
+            <button id="forget_pass-btn" onclick="move_to_forget_page()">Forget password</button>
+            <button onclick="login()" class="submit" style="margin-left: 2vw; scale: .8; margin-top: -2vw;">Submit</button>
+        </div>
+        <div id="forget_pass">
+            <h4 style="margin-left: .5vw; margin-bottom: 3vw;">Forget password</h4>
+            <input type="text" id="username_textinput_forget">
+            <p id="p_username" >User name</p>
+            <input type="password" id="p_username_forget">
+            <p>Password</p>
+            <input type="password" id="con_password_forget">
+            <p>confirm password</p>
+            <button id="goback_to_signin-btn" onclick="goback_to_forget_page()">Go back</button>
+            <button onclick="reset_pass()" class="submit" style="margin-left: 2vw; scale: .8; margin-top: -2vw;">Submit</button>
+        </div>
+    </div>
+    <script src="mohamed_osama.js"></script>
+</body>
+</html>

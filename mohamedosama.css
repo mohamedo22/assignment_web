@@ -1,0 +1,209 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html
+{
+    width: 100%;
+    height: 100%;
+}
+body
+{
+    width: 100%;
+    height: 100%;
+    background-color: silver;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    overflow: hidden;
+}
+#continer
+{
+    width: 450px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+input
+{
+    background-color: transparent;
+    outline: none;
+    border-top: 0px;
+    border-bottom: 2px;
+    border-color: green;
+    border-style: solid;
+    border-left: 0px;
+    border-right: 0px;
+    padding-left: .5vw;
+    margin-bottom: 1vw;
+    color: black;
+    font-size: .8rem;
+}
+#signin
+{
+    transform: translateX(200px);
+    scale: 1.5;
+    margin-top: 13vw;
+    transition: all 1s;
+}
+p
+{
+    font-size: .7rem;
+    position: relative;
+    top: -40px;
+    transition: 1s ease;
+    width: fit-content;
+}
+input:focus + p
+ {
+    color: rgba(4, 226, 37, 0.5);
+    font-size: .5em;
+}
+.submit
+{
+    background-color: transparent;
+    outline: none;
+    padding: .5vw 1vw;
+    border: 1px solid rgba(7, 160, 30, 0.5);
+    box-shadow: 0px 0px 8px 2px rgba(4, 226, 37, 0.5),inset 0px 0px 8px 2px rgba(4, 226, 37, 0.5)
+    ;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 5vw;
+    margin-left: 21vw;
+    transition: all 1s;
+
+}
+.submit:hover
+{
+    background-color: rgba(4, 226, 37, 0.5) ;
+    box-shadow: 0px 0px 40px 10px rgb(43, 253, 74);
+}
+#navigate_con
+{
+    background-color: rgb(15, 255, 133);
+    height: 30vw;
+    position: absolute;
+    width: 25vw;
+    border-radius: 200px;
+    left: -13vw;
+    transition: all 1s;
+}
+.navigate-btn
+{
+    background-color: transparent;
+    outline: none;
+    padding: .5vw 1vw;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 8px 2px rgba(255, 255, 255, 0.5),inset 0px 0px 8px 2px rgba(253, 253, 253, 0.5)
+    ;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 5vw;
+    margin-left: 21vw;
+    transition: all 1s;
+    width: fit-content;
+}
+.navigate-btn:hover
+{
+    background-color: white ;
+    box-shadow: 0px 0px 40px 10px white;
+}
+#signup
+{
+    margin-left: 16vw;
+    margin-top: 18vw;
+    scale: 1.4;
+    transition: all 1s;
+}
+#signin-btn
+{
+    margin-left: -19vw;
+    scale: 1.4;
+    transition: all 1s;
+}
+#signup-form
+{
+    scale: 1.4;
+    top: 9vw;
+    left: -27.5vw;
+    position: absolute;
+    z-index: 1;
+    transition: all 1s;
+}
+#forget_pass
+{
+    position: absolute;
+    scale: 1.5;
+    top: 10vw;
+    left: 40vw;
+    transition: all 1s;
+}
+.gender
+{
+    appearance: none;
+    border: 1px solid green;
+    width: 1vw;
+    height: 1vw;
+    margin-left: 1vw;
+    border-radius: 4px;
+    margin-right: .5vw;
+    position: relative;
+}
+.gender::after
+{
+ content: "";
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ background-color: green;
+ border-radius: 4px;
+ margin-left: -.5vw;
+ scale: 0;
+ transition: 400ms;
+}
+.gender:checked::after
+{
+    animation: scale 400ms ease-out forwards;
+}
+@keyframes scale
+{
+    50%
+    {
+        scale: 2;
+    }
+    100%
+    {
+        scale: 1;
+    }
+}
+#forget_pass-btn
+{
+    scale: .7;
+    background-color: transparent;
+    outline: none;
+    border: 0px transparent solid;
+    color: blue;
+    display: block;
+    margin-top: -1vw;
+    margin-left: 2vw;
+    margin-bottom: 2vw;
+    cursor: pointer;
+}
+#goback_to_signin-btn
+{
+    scale: .7;
+    background-color: transparent;
+    outline: none;
+    border: 0px transparent solid;
+    color: blue;
+    display: block;
+    margin-top: -1vw;
+    margin-left: 4vw;
+    margin-bottom: 2vw;
+    cursor: pointer;
+}

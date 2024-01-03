@@ -1,0 +1,112 @@
+*
+{
+    transition: all 1s;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: silver;
+}
+#Contanir
+{
+    height: fit-content;
+    background-color: white;
+    box-shadow: 2px 2px 20px black , -2px -2px 20px white,
+    inset 2px 2px 20px black , inset -2px -2px 2px rgb(163, 157, 157) ;
+    border-radius: 10px;
+    width: 400px;
+    overflow: hidden;
+}
+#slider_con
+{
+    width: fit-content;
+    display: flex;
+}
+.quistion_cont
+{
+    width: 290px;
+    margin-top: 2vw;
+    margin-left: 1vw;
+}
+input[type="radio"]
+{
+    appearance: none;
+    border: 1px solid green;
+    width: 1vw;
+    height: 1vw;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    border-radius: 4px;
+    position: relative;
+}
+input[type="radio"]::after
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    border-radius: 4px;
+    margin-left: 0vw;
+    scale: 0;
+    transition: 400ms;
+}
+input[type="radio"]:checked::after
+{
+    animation: scale 400ms ease-out forwards;
+}
+@keyframes scale
+{
+    50%
+    {
+        scale: 2;
+    }
+    100%
+    {
+        scale: 1;
+    }
+}
+#cont_of_cr
+{
+    display: flex;
+
+}
+table
+{
+    width: 1600px;
+}
+
+#cont_of_cr div
+{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    margin-left: 2vw;
+    border: 1px solid rgb(114, 114, 114);
+    margin-top: 3vw;
+    margin-left: 5vw;
+}
+.active
+{
+ background-color: rgb(15, 255, 133);
+}
+.btn-next
+{
+    background-color: transparent;
+    outline: none;
+    padding: .5vw 1vw;
+    border: 1px solid rgb(15, 255, 133);
+    transition: all 900ms;
+    border-radius: 8px;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    margin-left: 10vw;
+    cursor: pointer;
+}
+.btn-next:hover
+{
+    background-color: rgb(15, 255, 133);
+    box-shadow: 0px 0px 5px 2px rgb(15, 255, 133);
+}
